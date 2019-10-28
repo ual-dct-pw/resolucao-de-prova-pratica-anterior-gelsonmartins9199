@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+form {
+    width: 500px;
+    margin: auto;
+}
+
+.required::after{
+    content:"(*)";
+    color: red;
+    font-weight: bolder;
+}
+
+input, textarea{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgb(255,255,255,.8);
+}
+
+input:hover, textarea:hover {
+    background-color: cyan;
+}
+
+legend {
+    color: green;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: "Agency FB";
+}
+
+fieldset{
+    border-color: lawngreen;
+    margin: 20px;
+}
+
+
+fieldset#usuario {
+    background: url("icone-contato.png") no-repeat 95% 95%;
+}
+
+fieldset#infoAdicional {
+    background: url("info-icon.jpg") no-repeat 95% 95%;
+    margin-bottom: -15px;
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid darkblue;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 83px;
+    margin-right: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=reset] {
+    background-color: #FF0000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type=reset]:hover {
+    background-color: #cc0000;
+}
+
+input[type=button] {
+    background-color: #668cff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #0040ff;
+}
+
+div#interface{
+    width: 750px;
+    background-color: #ffffff;
+    margin: -20px auto 2px auto;
+    /* Colocar sombra para as bordas da margem*/
+    box-shadow: 0px 0px 10px black;
+    /* Espaçamento do documento em relação a margem */
+    padding: 30px 10px 10px 10px;
+}
+
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: cadetblue;
+    color: blue;
+}
+
+header#cabecalho-artigo h1 {
+    text-align: center;
+    font-size: 25pt;
+    font-family: "Tw Cen MT";
+    margin: auto -10px auto -10px;
+    color: green;
+}
+
+label#piada {
+    background-color: #0040ff;
+    color: white;
+}
+
+label#campos {
+    color: red;
+    font-weight: bolder;
+}

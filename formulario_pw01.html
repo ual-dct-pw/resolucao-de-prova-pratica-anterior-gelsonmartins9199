@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Empresa job4All</title>
+
+        <LINK REL="stylesheet"  href="formulario_pw01.css"/>
+        <script language="JavaScript" src="formulario_pw01.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+
+<body>
+
+<div id ="interface">
+
+
+    <section id="corpo-full">
+
+
+        <article id="formulario-principal">
+            <header id="cabecalho-artigo">
+                <hgroup>
+
+                    <h1>Formulário de Candidatura Expontânea</h1>
+
+                </hgroup>
+            </header>
+
+            <form method="post" id="formulario" action="formulario_pw01.html">
+
+                <!-- fieldset significa conjunto de campos  -->
+
+                <fieldset id="usuario"><legend>Identificação do usuário</legend>
+
+                    <p><label for="cNome" class="required">Nome completo</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo" required
+                                                                                         oninvalid="this.setCustomValidity('\n'+'Sorry, required field!')" oninput="setCustomValidity('')"/></p>
+                    <p><label for="cUser" class="required">Username</label> <input type="text" name="tUser" id="cUser" size="20" minlength="4" maxlength="10" placeholder="Username" required
+                                                                                    oninvalid="this.setCustomValidity('\n'+'Sorry, required field!')" oninput="setCustomValidity('')"/></p>
+                    <p><label for="cSenha" class="required">Password</label> <input type="password" name="tSenha" id="cSenha" size="11" maxlength="11" placeholder="Inserir password" required
+                                                                    oninvalid="this.setCustomValidity('\n'+'Sorry, required field!')" oninput="setCustomValidity('')"/></p>
+                    <p><label for="cTel">Telemóvel</label>
+                        <input name="tTel" type="tel" id="cTel" size="15" maxlength="9" placeholder="Nº de Telemóvel"
+                        />
+
+                    <p><label for="cMail" class="required">E-mail</label> <input type="email" name="tMail" id="cMail"
+                                                                                 size="20" maxlength="40" placeholder="exemplo@exemplo.com"
+                                                                                 oninput="validarEmail(field)" required /></p>
+
+                    <p><label for="cSexo" class="required">Sexo</label>
+
+                        <input type="text" name="tSexo" id="cSexo" maxlength="40" size="20" placeholder="Sexo..." list="listS" required
+                               oninvalid="this.setCustomValidity('\n'+'Sorry, required field!')" oninput="setCustomValidity('')"/> </p>
+
+                    <datalist id="listS">
+
+                        <option value="Masculino"></option>
+                        <option value="Femenino"></option>
+
+                    </datalist>
+
+
+                    <p><label for="cNasc" class="required">Data de Nascimento</label> <input type="date" name="tNasc" id="cNasc" required
+                                                                             oninvalid="this.setCustomValidity('\n'+'Sorry, required field!')" oninput="setCustomValidity('')"></p>
+
+                </fieldset>
+
+                <fieldset id="infoAdicional"><legend>Informação adicional</legend>
+
+                    <p><label for="cEmprego" class="required">Emprego</label>
+
+                        <input type="text" name="tEmprego" id="cEmprego" maxlength="40" size="20" placeholder="Emprego..." list="listEmprego" required
+                               oninvalid="this.setCustomValidity('\n'+'Sorry, required field!')" oninput="setCustomValidity('')"/> </p>
+
+                    <datalist id="listEmprego">
+
+                        <option value="Administrativo"></option>
+                        <option value="Comercial"></option>
+                        <option value="Desporto"></option>
+                        <option value="Técnico"></option>
+                        <option value="Outro"></option>
+
+                    </datalist>
+
+                    <p><label for="cJustificacao">Justificação</label> </br>
+                        <textarea name="tJustificacao" id="cJustificacao" cols="40" rows="12" placeholder="Deixe aqui a sua jusificação!"></textarea>
+
+                    </p>
+
+                </fieldset>
+
+                <p> <label for="campos" id="campos"> (*) Campos obrigatórios</label> </p>
+
+                <input type="submit" value="Submit"><input type="reset" value="Clean" onclick="clean()">
+                <input type="button" value="Piada do dia" onclick="callThinkingAPI()">
+                <p id="formFeedback"></p>
+
+                <label id="piada"></label>
+
+            </form>
+        </article>
+
+    </section>
+
+    <footer id="rodape">
+        <p>Copyright &copy; 2019 - by Gelson Pembele </br> <a href="https://www.facebook.com/" target="_blank"> Facebook </a>|<a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">  Gmail </a> </p>
+    </footer>
+
+
+</div>
+</body>
+</html>
